@@ -14,16 +14,19 @@ export default class NewItem extends Component {
     const {
       style,
       imageUrl,
+      url,
       title,
       author,
       date,
       location,
       description,
+      onPress
     } = this.props;
     const accentColor = globalStyles.ACCENT_COLORS[0];
     return (
       <TouchableOpacity
         style={style}
+        onPress={onPress}
       >
         <View>
           <Thumbnail
