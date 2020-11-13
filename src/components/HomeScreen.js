@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
 import {
   Container,
   Footer,
@@ -25,19 +26,19 @@ export default class HomeScreen extends Component {
         <NewsFeedContainer />
       <Footer>
         <FooterTab>
-          <Button badge vertical active={this.state.active === 'news'}
+          <Button style={styles.button} badge vertical active={this.state.active === 'news'}
             onPress={ ()=> this.setState({ active: 'news' })}
           >
             <Icon name="md-print" />
             <Text>News</Text>
           </Button>
-          <Button badge vertical active={this.state.active === 'search'}
+          <Button style={styles.button} badge vertical active={this.state.active === 'search'}
             onPress={ ()=> this.setState({ active: 'search' })}
           >
             <Icon name="md-search" />
             <Text>Search</Text>
           </Button>
-          <Button badge vertical active={this.state.active === 'bookmarks'}
+          <Button style={styles.button} badge vertical active={this.state.active === 'bookmarks'}
             onPress={ ()=> this.setState({ active: 'bookmarks' })}
           >
             <Icon name="md-bookmark" />
@@ -49,3 +50,11 @@ export default class HomeScreen extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  button: {
+    alignSelf: "stretch",
+    justifyContent: "center",
+    paddingTop: 18
+  }
+});
