@@ -14,7 +14,6 @@ const Thumbnail = ({ url, titleText, accentColor, style }) => {
 
   return (
     <View style={[styles.container, { borderColor: accentColor }, style]}>
-      { url.length > 0 ? (
       <ImageBackground
         style={[styles.image, imageStyle]}
         source={{
@@ -23,11 +22,6 @@ const Thumbnail = ({ url, titleText, accentColor, style }) => {
       >
         {TitleComponent}
       </ImageBackground>
-    ) : (
-      <View style={[styles.image, imageStyle]}>
-        {TitleComponent}
-      </View>
-    )}
     </View>
   );
 };
