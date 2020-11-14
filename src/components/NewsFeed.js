@@ -86,10 +86,10 @@ export default class NewsFeed extends Component {
             index={index}
             key={item.title}
             style={styles.newsItem}
-            imageUrl={item.multimedia[0].url}
+            imageUrl={item.imageUrl}
             title={item.title}
-            description={item.abstract}
-            date={"Today"}
+            description={item.description}
+            date={item.date}
             location={item.location}
             author={item.author}
           />
