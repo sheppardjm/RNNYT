@@ -10,6 +10,7 @@ import {
   Badge
 } from 'native-base';
 import NewsFeedContainer from '../containers/NewsFeedContainer';
+import SearchContainer from '../containers/SearchContainer';
 import * as globalStyles from '../styles/global';
 
 export default class HomeScreen extends Component {
