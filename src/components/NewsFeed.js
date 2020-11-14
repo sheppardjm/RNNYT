@@ -83,6 +83,7 @@ export default class NewsFeed extends Component {
           data={this.props.news}
           renderItem={({item, index}) => <NewsItem 
             onPress={() => this.onModalOpen(item.url)}
+            index={index}
             key={item.title}
             style={styles.newsItem}
             imageUrl={item.imageUrl}

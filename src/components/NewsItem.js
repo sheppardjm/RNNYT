@@ -22,7 +22,9 @@ export default class NewItem extends Component {
       description,
       onPress
     } = this.props;
-    const accentColor = globalStyles.ACCENT_COLORS[0];
+    const accentColor = globalStyles.ACCENT_COLORS[
+      this.props.index % globalStyles.ACCENT_COLORS.length
+    ];
     return (
       <TouchableOpacity
         style={style}
