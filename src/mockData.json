@@ -11,7 +11,7 @@
       ], 
       "multimedia": [ 
         { 
-          "url": "https://facebook.github.io/react/img/logo_og.png", 
+          "url": "https://reactnative.dev/img/header_logo.svg", 
           "format": "thumbLarge" 
         } 
       ] 
@@ -27,7 +27,7 @@
       ], 
       "multimedia": [ 
         { 
-          "url": "https://www.packtpub.com/sites/default/files/packt_logo.png", 
+          "url": "https://www.packtpub.com/media/logo/default/logo.png", 
           "format": "thumbLarge" 
         } 
       ] 

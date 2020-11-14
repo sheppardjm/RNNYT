@@ -32,7 +32,7 @@ export default class NewItem extends Component {
       >
         <View>
           <Thumbnail
-            url={imageUrl}
+            imageUrl={imageUrl}
             titleText={title}
             accentColor={accentColor}
             style={styles.thumbnail}

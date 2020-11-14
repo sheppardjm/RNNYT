@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import Title from './Title';
 
-const Thumbnail = ({ url, titleText, accentColor, style }) => {
+const Thumbnail = ({ imageUrl, titleText, accentColor, style }) => {
   const imageStyle = {
     backgroundColor: `${accentColor}77`
   };
@@ -17,7 +17,7 @@ const Thumbnail = ({ url, titleText, accentColor, style }) => {
       <ImageBackground
         style={[styles.image, imageStyle]}
         source={{
-          uri: url
+          uri: imageUrl
         }}
       >
         {TitleComponent}
