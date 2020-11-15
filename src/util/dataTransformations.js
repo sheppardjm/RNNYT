@@ -23,8 +23,8 @@ export const reshapeNewsData = news => (
   }) => ({
     description: abstract || '',
     author: byline ? byline.replace('By ', '') : '',
-    location: geo_facet.length > 0 ? geo_facet[0] : '',
-    imageUrl: getMultimediaUrlByFormat(multimedia, 'thumbLarge'),
+    location: '',
+    imageUrl: getMultimediaUrlByFormat(multimedia, 'Standard Thumbnail'),
     date: moment(published_date).format('MMM Do YYYY'),
     title,
     url
