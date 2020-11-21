@@ -10,6 +10,7 @@ import WebView from 'react-native-webview';
 import NewsItem from './NewsItem';
 import SmallText from './SmallText';
 import * as globalStyles from '../styles/global';
+const RCTNetworking = require('react-native/Libraries/Network/RCTNetworking');
 
 export default class NewsFeed extends Component {
   constructor(props){
@@ -63,6 +64,8 @@ export default class NewsFeed extends Component {
   }
 
   onModalOpen(url) {
+    RCTNetworking.clearCookies(() => {});
+
     this.setState({
       modalVisible: true,
       modalUrl: url
