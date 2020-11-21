@@ -30,7 +30,7 @@ export default class HomeScreen extends Component {
           <Button style={styles.button} badge vertical active={this.state.active === 'news'}
             onPress={ ()=> this.setState({ active: 'news' })}
           >
-            <Icon name="md-print" />
+            <Icon name="md-grid" />
             <Text>News</Text>
           </Button>
           <Button style={styles.button} badge vertical active={this.state.active === 'search'}
