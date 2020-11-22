@@ -17,7 +17,7 @@ export default class HomeScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: 'news'
+      active: 'us'
     };
   }
 
@@ -27,23 +27,23 @@ export default class HomeScreen extends Component {
         <NewsFeedContainer />
       <Footer>
         <FooterTab>
-          <Button style={styles.button} badge vertical active={this.state.active === 'news'}
-            onPress={ ()=> this.setState({ active: 'news' })}
+          <Button style={styles.button} badge vertical active={this.state.active === 'us'}
+            onPress={ ()=> this.setState({ active: 'us' })}
           >
-            <Icon name="md-grid" />
-            <Text>News</Text>
+            <Icon name="ios-star" />
+            <Text>U.S.</Text>
           </Button>
-          <Button style={styles.button} badge vertical active={this.state.active === 'search'}
-            onPress={ ()=> this.setState({ active: 'search' })}
+          <Button style={styles.button} badge vertical active={this.state.active === 'world'}
+            onPress={ ()=> this.setState({ active: 'world' })}
           >
-            <Icon name="md-search" />
-            <Text>Search</Text>
+            <Icon name="md-globe" />
+            <Text>World</Text>
           </Button>
-          <Button style={styles.button} badge vertical active={this.state.active === 'bookmarks'}
-            onPress={ ()=> this.setState({ active: 'bookmarks' })}
+          <Button style={styles.button} badge vertical active={this.state.active === 'opinion'}
+            onPress={ ()=> this.setState({ active: 'opinion' })}
           >
-            <Icon name="md-bookmark" />
-            <Text>Bookmarks</Text>
+            <Icon name="ios-quote" />
+            <Text>Opinion</Text>
           </Button>
         </FooterTab>
       </Footer>

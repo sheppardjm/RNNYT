@@ -37,6 +37,10 @@ export default class NewsFeed extends Component {
   refresh() {
     if (this.props.loadNews) {
       this.props.loadNews();
+    } else if (this.props.loadWorldNews) {
+      this.props.loadWorldNews();
+    } else if (this.props.loadOpinion) {
+      this.props.loadOpinion();
     }
   }
 
