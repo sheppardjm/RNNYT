@@ -14,7 +14,6 @@ const Title = ({ style, children }) => (
 
 const styles = StyleSheet.create({
   title: {
-    fontFamily: 'HelveticaNeue-CondensedBold',
     fontSize: 18,
     color: globalStyles.HEADER_TEXT_COLOR,
     backgroundColor: `${globalStyles.BG_COLOR}99`
